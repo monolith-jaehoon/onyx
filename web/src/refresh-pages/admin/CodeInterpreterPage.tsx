@@ -23,6 +23,7 @@ import useCodeInterpreter, {
 import { updateCodeInterpreter } from "@/lib/admin/code-interpreter/svc";
 import { Content, ContentAction } from "@opal/layouts";
 import { toast } from "@/hooks/useToast";
+import { cn } from "@opal/utils";
 
 interface CodeInterpreterCardProps {
   variant?: CardProps["variant"];
@@ -124,7 +125,7 @@ function ConnectionStatus({
       <div
         onMouseEnter={() => hasError && onIconHover(true)}
         onMouseLeave={() => onIconHover(false)}
-        className={hasError ? "cursor-pointer" : undefined}
+        className={cn(hasError && "cursor-pointer")}
       >
         <Icon size={16} className={iconColor} />
       </div>
