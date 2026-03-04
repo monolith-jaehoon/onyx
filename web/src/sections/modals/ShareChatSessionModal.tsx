@@ -210,20 +210,19 @@ export default function ShareChatSessionModal({
           </Section>
 
           {isShared && (
-            <div aria-label="share-modal-link-input">
-              <InputTypeIn
-                readOnly
-                value={shareLink}
-                rightSection={
-                  <CopyIconButton
-                    getCopyText={() => shareLink}
-                    tooltip="Copy link"
-                    size="sm"
-                    aria-label="share-modal-copy-link"
-                  />
-                }
-              />
-            </div>
+            <InputTypeIn
+              aria-label="share-modal-link-input"
+              readOnly
+              value={shareLink}
+              rightSection={
+                <CopyIconButton
+                  getCopyText={() => shareLink}
+                  tooltip="Copy link"
+                  size="sm"
+                  aria-label="share-modal-copy-link"
+                />
+              }
+            />
           )}
         </Modal.Body>
         <Modal.Footer>
