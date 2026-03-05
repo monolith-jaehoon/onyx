@@ -42,6 +42,7 @@ def register_ollama_models() -> None:
             "ollama_chat/deepseek-v3.1:latest": {"supports_function_calling": True},
             "ollama_chat/deepseek-v3.1:671b": {"supports_function_calling": True},
             "ollama_chat/deepseek-v3.1:671b-cloud": {"supports_function_calling": True},
+            "ollama_chat/deepseek-v3.2:cloud": {"supports_function_calling": True},
             "ollama/deepseek-r1:latest": {"supports_function_calling": True},
             "ollama/deepseek-r1:1.5b": {"supports_function_calling": True},
             "ollama/deepseek-r1:7b": {"supports_function_calling": True},
@@ -53,6 +54,7 @@ def register_ollama_models() -> None:
             "ollama/deepseek-v3.1:latest": {"supports_function_calling": True},
             "ollama/deepseek-v3.1:671b": {"supports_function_calling": True},
             "ollama/deepseek-v3.1:671b-cloud": {"supports_function_calling": True},
+            "ollama/deepseek-v3.2:cloud": {"supports_function_calling": True},
             # Gemma3 models
             "ollama_chat/gemma3:latest": {"supports_function_calling": True},
             "ollama_chat/gemma3:270m": {"supports_function_calling": True},
